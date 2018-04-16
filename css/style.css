@@ -71,26 +71,32 @@ header:after, .container:after, footer:after, .widget-posts-list li:after, #subs
 .button {
 	position: relative;
 	display: inline-block;
-	padding: 25px 80px 25px 30px;
-	background: #19b1ce;
+	cursor: pointer;
+	padding: 23px 93px 22px 33px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.04);
 	color: #fff;
 	font-size: 16px;
 	text-transform: uppercase;
-	transition: none;
+	background: #19b1ce;
+	-webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.button:hover {
-	background: linear-gradient(180deg, #19b1ce, #0A88A0);
-	-webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
-    transition: all 0.3s ease;
+.gr:hover {
+	background: linear-gradient(90deg, #19b1ce, #0A88A0);
+	background-position: bottom left;
+}
+
+.button:active {
+
 }
 
 .button img {
 	position: absolute;
-	top: 35%;
-	right: 25px;
+	top: 33%;
+	right: 28px;
 	width: 31px;
 	height: 19px;
 }
@@ -109,7 +115,7 @@ header {
 	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
 	padding: 0px 0;
 	position: relative;
-	z-index: 1;
+	z-index: 12;
 }
 
 nav {
@@ -204,12 +210,11 @@ nav {
 /* submenu */
 
 .submenu {
-	display: none;
 	position: absolute;
   	top: 98px;
   	left: -55px;
   	width: 200px;
-  	z-index: 10;
+  	z-index: 11;
   	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
 }
 
@@ -313,7 +318,7 @@ main {
 	background: #F8F4FF;
 }
 
-.portfolio-title-gradient {
+/*.portfolio-title-gradient {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -321,11 +326,40 @@ main {
 	height: 100%;
 	background: none;
 	opacity: 0.1;
+}*/
+
+.portfolio-title-col-1,
+.portfolio-title-col-2,
+.portfolio-title-col-3 {
+ position: relative;
+ overflow: hidden;
 }
 
-.portfolio-title-gradient-container, .portfolio-title-gradient:hover {
-	background: linear-gradient(0deg, #19b1ce 1%, rgba(0,0,0,0) 99%);
-	
+.portfolio-title-col-1 > div,
+.portfolio-title-col-2 > div,
+.portfolio-title-col-3 > div {
+ z-index: 10;
+ position: relative;
+}
+
+.portfolio-title-col-1 > .portfolio-title-gradient,
+.portfolio-title-col-2 > .portfolio-title-gradient,
+.portfolio-title-col-3 > .portfolio-title-gradient {
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ height: 100%;
+ background: linear-gradient(0deg, #19b1ce 1%, rgba(0,0,0,0) 99%);
+ transition: all 1s;
+ z-index: 1;
+ opacity: 0.1;
+}
+
+.portfolio-title-col-1:hover .portfolio-title-gradient,
+.portfolio-title-col-2:hover .portfolio-title-gradient,
+.portfolio-title-col-3:hover .portfolio-title-gradient {
+ top: 0;
 }
 
 .portfolio-title-col-1:hover:after {
@@ -610,11 +644,11 @@ header {
 }
 	
 #topmenu {
+	overflow: hidden;
 	max-height: 0;
 	background: white;
 	float: none;
 	position: absolute;
-	overflow: hidden;
 	top: 90px;
 	right: 0;
 	left: 0;
@@ -652,6 +686,7 @@ header {
 /* submenu */
 
 .submenu {
+	display: none;
 	position: inherit;
 	top: inherit;
 	left: inherit;
@@ -659,6 +694,7 @@ header {
   	width: 100%;
   	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
   	background: #eee;
+  	transition: top .4s, transform .6s;
 }
 
 #topmenu .submenu > li  {

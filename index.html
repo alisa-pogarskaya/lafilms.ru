@@ -43,7 +43,7 @@
 			  <!-- меню -->
 			  <ul id="topmenu">
 				<li><a href="">Проекты</a></li>
-				<li>
+				<li class="sub">
 					<img class="topmenu-arrow" src="img/arrow_back.svg">
 					<a href="">О компании</a>
 					<ul class="submenu">
@@ -343,7 +343,7 @@
 			</div>	
 
 			<div class="button-container">
-				<a class="button">
+				<a class="button gr">
 					<span>Все работы</span>
 					<img src="img/arrow-right.svg" width="31" height="19">
 				</a>
@@ -379,12 +379,26 @@
 		$('.nav-toggle').on('click', function(){
 		$('#topmenu').toggleClass('active');
 		});
-		</script>
-			
-		<script>
-			$(document).ready(function() {
-    		$('.topmenu a').click(function(){$(this).next('.submenu').slideToggle();$(this).toggleClass('topmenu-arrow');});
-		});	
+		
+		$(document).ready(function () {
+			    $('.sub > a').click(function(){
+			      $('.sub ul').slideUp();
+			       if ($(this).next().is(":visible")){
+			           $(this).next().slideUp();
+			       } else {
+			       $(this).next().slideToggle();
+			       }
+			      return false;
+			    });
+			       $('.topmenu > ul > li > a').click(function(){
+				   $('.topmenu > ul > li > a, .sub a').removeClass('active');
+				   $(this).addClass('active');
+				}),
+			       $('.sub ul li a').click(function(){
+				   $('.sub ul li a').removeClass('active');
+				   $(this).addClass('active');
+				});
+			});
 		</script>
 	</body>
 </html>
