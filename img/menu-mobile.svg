@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HEADER-TABLET" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-728.000000, -33.000000)">
+        <g id="menu-mobile">
+            <g transform="translate(728.000000, 33.000000)">
+                <circle id="oval" fill="#FCFCFC" cx="13" cy="13" r="13"></circle>
+                <g id="menu-icon" transform="translate(9.000000, 7.000000)">
+                    <rect id="line-bottom" fill="#19B1CE" x="0" y="11" width="9" height="1" rx="0.5"></rect>
+                    <rect id="line-middle" fill="#2B2B2B" x="0" y="5.5" width="5" height="1" rx="0.5"></rect>
+                    <rect id="line-top" fill="#19B1CE" x="0" y="0" width="9" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

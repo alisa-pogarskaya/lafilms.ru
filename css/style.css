@@ -1,0 +1,799 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out; /* плавность переходов для всех элементов страницы*/
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto';
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+body {
+	font-family: 'Roboto', arial, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color: #373737;
+	background: #FDFEFF;
+}
+
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+	content: "";
+	display: table;
+	clear: both;
+} 
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+} 
+
+.clearfix:after {
+	content:'';
+	display:table;
+	clear:both; 
+}
+
+.button-container {
+	width: 100%;
+	height: auto;
+	padding: 100px 0px;
+	text-align: center;
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	padding: 25px 80px 25px 30px;
+	background: #19b1ce;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: none;
+}
+
+.button:hover {
+	background: linear-gradient(180deg, #19b1ce, #0A88A0);
+	-webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+
+.button img {
+	position: absolute;
+	top: 35%;
+	right: 25px;
+	width: 31px;
+	height: 19px;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+
+/* HEADER */
+
+header {
+	width: 100%;
+	background: white;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+	padding: 0px 0;
+	position: relative;
+	z-index: 1;
+}
+
+nav {
+	width: 100%; 
+}
+
+/* LOGOTYPE */
+
+.logo-container {
+	display: inline-block;
+	position: relative;
+	margin: 25px 0px;
+}
+
+.logo {
+	position: absolute;
+	top: 2px;
+	left: 10px;
+	display: block; 
+	float: left;
+}
+
+.logo-title {
+	display: inline-block;
+	padding: 4px 10px 5px 60px;
+	margin: 7px 0px 0px 0px;
+	width: 203px;
+	height: 24px;
+	border: 1px solid rgb(0,0,0,0.1);
+	color: rgb(43,43,43,.2);
+}
+
+.logo-title:hover {
+	color: #19b1ce;
+}
+
+/* MENU */
+
+#topmenu {
+	float: right;
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+}
+
+#topmenu li {
+	display: inline-block;
+	min-width: 90px;
+	margin-right: 30px;
+	text-align: center;
+}
+
+#topmenu a {
+	display: block;
+	padding: 25px 0px;
+	height: auto;
+	color: #111;
+	letter-spacing: 1px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+#topmenu li a {
+	position: relative;
+}
+
+#topmenu a:hover {
+	color: #19B1CE;
+	box-shadow:
+		25px 0px 0px white inset,
+		-25px 0px 0px white inset,
+		0 -2px 0 #19B1CE inset;
+}
+
+.topmenu-arrow {
+	display: none;
+	position: absolute;
+	top: 45%;
+	left: 55px;
+}
+
+#topmenu li {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+}
+
+#topmenu li:last-child  {
+	margin-right: 0;
+}
+
+/* submenu */
+
+.submenu {
+	display: none;
+	position: absolute;
+  	top: 98px;
+  	left: -55px;
+  	width: 200px;
+  	z-index: 10;
+  	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+}
+
+#topmenu .submenu > li  {
+	border-top: 1px solid #EBEBE3;
+	width: 100%;
+}
+
+#topmenu .submenu > li:first-child  {
+	border-top: none;
+}
+
+#topmenu .submenu > li > a {
+	padding: 5px 0px;
+}
+
+#topmenu .submenu > li > a:hover {
+	box-shadow: none;
+}
+
+nav .submenu {
+	visibility: hidden;
+	opacity: 0;
+	background: #fff;
+	padding: 0px;
+}
+
+nav ul li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* кнопка переключения меню, появляющаяся при ширине 768px */
+
+.nav-toggle {
+	display: none;
+	position: relative;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+	background: url(../img/menu-mobile.svg) no-repeat;
+	cursor: pointer;
+}
+
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+
+#topmenu.active {
+	max-height: 1000px;
+}
+
+/* content main */
+
+main {
+	margin: 0px;
+	padding: 0px;
+	min-height: 600px;
+}
+
+.portfolio-layout {
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.col1 {
+    min-height: auto;
+    width: 33.333333%;
+    float: left;
+}
+
+.col2 {
+	min-height: auto;
+    width: 33.333333%;
+    float: left;
+}
+
+.col3 {
+    min-height: auto;
+    width: 33.333333%;
+    float: left;
+}
+
+.portfolio-title-col-1, .portfolio-title-col-2, .portfolio-title-col-3 {
+	position: relative;
+	padding: 61px 0px;
+	background: #FDFEFF;
+	text-align: center;
+	font-size: 40px;
+	transition: .5s ease-in-out;
+}
+
+.portfolio-title-col-1 {
+	background: #FDFEFF;
+}
+
+.portfolio-title-col-2 {
+	background: #FCFAFF;
+}
+
+.portfolio-title-col-3 {
+	background: #F8F4FF;
+}
+
+.portfolio-title-gradient {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: none;
+	opacity: 0.1;
+}
+
+.portfolio-title-gradient-container, .portfolio-title-gradient:hover {
+	background: linear-gradient(0deg, #19b1ce 1%, rgba(0,0,0,0) 99%);
+	
+}
+
+.portfolio-title-col-1:hover:after {
+	position: absolute;
+	bottom: 0px;
+	left: 48%;
+	content: "";
+	width: 20px;
+	height: 11px;
+	background: #19b1ce;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	transition: .5s ease-in-out;
+}
+
+.portfolio-title-col-2:hover:after {
+	position: absolute;
+	bottom: 0px;
+	left: 48%;
+	content: "";
+	width: 20px;
+	height: 11px;
+	background: #19b1ce;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	transition: .5s ease-in-out;
+}
+
+.portfolio-title-col-3:hover:after {
+	position: absolute;
+	bottom: 0px;
+	left: 48%;
+	content: "";
+	width: 20px;
+	height: 11px;
+	background: #19b1ce;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	transition: .5s ease-in-out;
+}
+
+.portfolio-title-col-1 div,h2 {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+}
+
+.portfolio-title-col-2 div,h2 {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+}
+
+.portfolio-title-col-3 div,h2 {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+}
+
+.portfolio-title-col-1 h2 {
+	font-size: 48px;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.portfolio-title-col-2 h2 {
+	font-size: 48px;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.portfolio-title-col-3 h2 {
+	font-size: 48px;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.portfolio-title-number {
+	position: relative;
+	padding-right: 25px;
+	font-size: 20px;
+	color: rgba(43,43,43,.3);
+}
+
+.portfolio-title-number:after {
+	content: '';
+    display: block;
+	position: absolute;
+	top: -19px;
+	left: 35px;
+	width: 1px;
+    height: 46px;
+    background-color: rgb(151,151,151,.3);
+    transform: rotate(15deg);
+}
+
+/* portfolio item */
+
+.view {
+ 	width: 100%;
+ 	height: auto;
+ 	float: left;
+ 	overflow: hidden;
+ 	position: relative;
+ 	text-align: center;
+ 	background: #fff;
+}
+
+.view .mask, .view .content {
+	width: 100%;
+	height: 100%;
+ 	position: absolute;
+ 	overflow: hidden;
+ 	top: 0;
+ 	left: 0
+}
+
+.view .mask {
+	padding: 10px;
+}
+
+.view img {
+ 	display: block;
+ 	position: relative
+}
+
+.view p {
+ 	font-size: 12px;
+ 	position: relative;
+ 	color: #fff;
+ 	padding: 0px 0px 25px 0px;
+ 	font-weight: bold;
+}
+
+.view p.info {
+	display: block;
+	width: 275px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.4;
+ 	color: #fff;
+}
+
+/* portfolio item animation */
+
+.view .mask .mask-border-inner {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+	padding: 30px 30px;
+}
+
+.view-first img {
+ 	transition: all 0.3s linear;
+}
+
+.view-first .mask {
+ 	opacity: 0;
+ 	background-color: rgba(25,177,206,.95);
+ 	transition: all 0.4s ease-in-out;
+}
+
+.view-first p {
+ 	transform: translateY(100px);
+ 	opacity: 0;
+ 	transition: all 0.2s linear;
+}
+
+.view-first p.info{
+ 	opacity: 0;
+ 	transition: all 0.2s ease-in-out;
+}
+
+/* portfolio item animation hover */
+
+.view-first:hover img {
+ 	transform: scale(1.3);
+}
+
+.view-first:hover .mask {
+ 	opacity: 1;
+}
+
+.view-first:hover p,
+.view-first:hover p.info {
+ 	opacity: 1;
+ 	transform: translateY(0px);
+}
+
+.view-first:hover p {
+ 	transition-delay: 0.1s;
+}
+
+.view-first:hover p.info {
+ 	transition-delay: 0.2s;
+}
+
+/* FOOTER */
+
+footer {
+	padding: 30px 0;
+	background: white;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+	clear: both;
+}
+
+.footer-col {
+	width: 33.3333333333%;
+	float: left;
+	line-height: 50px;
+}
+
+.footer-col img {
+	float: right;
+	width: auto;
+	opacity: 0.8;
+}
+
+.footer-col img:hover {
+	opacity: 1;
+}
+
+.social-bar-wrap {
+	padding-top: 10px;
+	text-align: center;
+	line-height: 15px;
+}
+
+.social-bar-wrap a {
+	width: 31px;
+	height: 31px;
+	padding: 7px;
+	margin-right: 20px;
+	border: 1px solid rgb(0,0,0,0.1);
+	border-radius: 50%;
+	display: inline-block;
+	color: #373737;
+	transition: all 0s;
+}
+
+.social-bar-wrap a:last-child {
+	margin-right: 0px;
+}
+
+.social-bar-wrap a:hover{
+	border:1px solid #19B1CE;
+	color: #19B1CE;
+}
+
+
+/* -------------------------------- 
+
+MEDIA
+
+-------------------------------- */
+
+/* --------- MEDIA 780 ---------*/
+
+@media (max-width: 780px) {
+	
+header {
+	height: 90px;	
+}	
+
+.nav-toggle {
+	margin-top: 30px;
+	display: block;
+}
+	
+.logo-container {
+	display: inline-block;
+	position: relative;
+	margin: 25px 0px;
+}
+	
+.logo-title {
+	display: inline-block;
+	padding: 4px 10px 5px 60px;
+	margin: 7px 0px 0px 0px;
+	width: 203px;
+	height: 24px;
+	border: 1px solid rgb(0,0,0,0.1);
+	color: rgb(43,43,43,.2);
+}
+	
+#topmenu {
+	max-height: 0;
+	background: white;
+	float: none;
+	position: absolute;
+	overflow: hidden;
+	top: 90px;
+	right: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 3;
+	box-shadow: inset 0px 3px 8px -2px rgba(0,0,0,.03);
+}
+	
+#topmenu li {
+	display: block;
+	border-top: 1px solid #EBEBE3;
+	margin-right: 0;
+}
+	
+#topmenu a {
+	padding: 12px 0px;
+}
+	
+#topmenu a:hover {
+	color: #19B1CE;
+	box-shadow: none;
+}
+
+#topmenu .topmenu-arrow {
+	display: inline-block;
+	position: absolute;
+	width: 14px;
+	height: 8px;
+	top: 27px;
+	right: 25px;
+	left: auto;
+}
+
+/* submenu */
+
+.submenu {
+	position: inherit;
+	top: inherit;
+	left: inherit;
+	z-index: 0;
+  	width: 100%;
+  	box-shadow: 3px 3px 10px rgba(0,0,0,.03);
+  	background: #eee;
+}
+
+#topmenu .submenu > li  {
+	border-top: 1px solid #EBEBE3;
+	width: 100%;
+}
+
+#topmenu .submenu > li:first-child  {
+	border-top: 1px solid #EBEBE3;
+}
+
+#topmenu .submenu > li > a {
+	padding: 12px 0px;
+}
+
+#topmenu .submenu > li > a:hover {
+	box-shadow: none;
+}
+
+nav .submenu {
+	visibility: visible;
+	opacity: 1;
+	background: #fff;
+	padding: 0px;
+}
+
+nav ul li .submenu {
+	background: #fbfbfb;
+	box-shadow: none;
+}
+
+nav ul li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+	box-shadow: none;
+}
+
+/* Footer */
+	
+.footer-col, .footer-col img{
+	float: none;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-col img {
+	float: none;
+	margin: 40px 0px;
+	text-align: center;
+}
+
+}
+
+/* --------- MEDIA 420 ---------*/
+	
+@media (max-width: 420px) {
+	
+header {
+	height: 50px;	
+}
+	
+.logo-container {
+	display: inline-block;
+	position: relative;
+	margin: 7px 0px;
+}
+	
+.nav-toggle {
+	margin-top: 13px;
+	display: block;
+}
+
+#topmenu {
+	top: 50px;
+	box-shadow: inset 0px 5px 7px -3px rgba(0,0,0,.03);
+}
+
+#topmenu a {
+	padding: 12px 0px;
+}
+	
+#topmenu a:hover {
+	color: #19B1CE;
+	box-shadow: none;
+}
+
+.col1 {
+    min-height: auto;
+    width: 100%;
+    float: none;
+}
+
+.col2 {
+	min-height: auto;
+    width: 100%;
+    float: none;
+
+}
+
+.col3 {
+    min-height: auto;
+    width: 100%;
+    float: none;
+}
+
+.portfolio-title-col-1, .portfolio-title-col-2, .portfolio-title-col-3 {
+	height: 179px;
+}
+
+.portfolio-title-gradient {
+	display: none;
+}
+
+.portfolio-title-gradient-container, .portfolio-title-gradient:hover {
+	display: none;
+}
+
+.portfolio-title-col-1:hover:after {
+	display: none;
+}
+
+.portfolio-title-col-2:hover:after {
+	display: none;
+}
+
+.portfolio-title-col-3:hover:after {
+	display: none;
+}
+
+.footer-col {
+	float: none;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+}

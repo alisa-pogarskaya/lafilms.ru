@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="19px" viewBox="0 0 31 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-926.000000, -1555.000000)">
+        <g id="Group-8" transform="translate(0.000000, 1450.000000)" fill="#FFFFFF">
+            <g id="btn-all-work" transform="translate(759.000000, 87.000000)">
+                <path d="M198,27.499103 C198,27.2670969 197.859333,26.9597554 197.718667,26.8117514 L189.718667,18.3115255 C189.346667,17.926182 188.739333,17.8815141 188.304667,18.2721911 C187.916667,18.6242005 187.906,19.3062186 188.265333,19.6862287 L194.687333,26.4990765 L168,26.4990765 C167.448,26.4990765 167,26.9470884 167,27.499103 C167,28.0511177 167.448,28.4991296 168,28.4991296 L194.687333,28.4991296 L188.265333,35.3119773 C187.906,35.6919874 187.932,36.3586718 188.304667,36.7260149 C188.698,37.1140252 189.351333,37.0800243 189.718667,36.6866805 L197.718667,28.1864546 C197.953333,27.9551152 197.997333,27.7337759 198,27.499103 Z" id="arrow-right"></path>
+            </g>
+        </g>
+    </g>
+</svg>
