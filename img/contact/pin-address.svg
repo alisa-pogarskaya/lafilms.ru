@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-address</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contact-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-547.000000, -304.000000)">
+        <g id="content" transform="translate(-2.000000, 185.000000)">
+            <g id="contact-us" transform="translate(91.000000, 78.000000)">
+                <g id="form">
+                    <g id="address" transform="translate(455.006410, 32.000000)">
+                        <g id="pin-address" transform="translate(0.000000, 9.000000)">
+                            <rect id="rectangle" fill="#D8D8D8" opacity="0" x="0" y="0" width="24.1538462" height="24"></rect>
+                            <path d="M12.0022643,0 C7.03069608,0 3,3.99741312 3,8.93349004 C3,12.7192681 5.3841699,15.9504377 8.73618357,17.251371 L12.0032051,26.1655649 L15.4132392,17.1978398 C18.6912376,15.8632939 21.0064103,12.6682267 21.0064103,8.93349004 C21.0045285,3.99990294 16.9763414,0 12.0022643,0 Z M11.721855,11.8167067 C10.0134041,11.8167067 8.62700321,10.4317262 8.62700321,8.72277015 C8.62700321,7.01381406 10.0134041,5.62700321 11.721855,5.62700321 C13.4327456,5.62700321 14.8167067,7.01198369 14.8167067,8.72277015 C14.8167067,10.4317262 13.4303059,11.8167067 11.721855,11.8167067 Z" id="pin" fill="#19B1CE"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

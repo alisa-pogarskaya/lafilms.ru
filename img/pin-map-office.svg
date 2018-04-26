@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="47px" viewBox="0 0 32 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-map-office</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contact-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-707.000000, -583.000000)">
+        <g id="content" transform="translate(-2.000000, 185.000000)" fill="#19B1CE">
+            <g id="map-office" transform="translate(0.000000, 183.000000)">
+                <path d="M724.998328,215 C716.163131,215 709,222.103982 709,230.876106 C709,237.603982 713.237015,243.346239 719.194029,245.658186 L725,261.5 L731.060125,245.563053 C736.885603,243.191372 741,237.513274 741,230.876106 C740.996656,222.108407 733.837984,215 724.998328,215 Z M724.5,236 C721.463835,236 719,233.538689 719,230.501626 C719,227.464564 721.463835,225 724.5,225 C727.540501,225 730,227.461311 730,230.501626 C730,233.538689 727.536165,236 724.5,236 Z" id="pin-map-office"></path>
+            </g>
+        </g>
+    </g>
+</svg>

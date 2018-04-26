@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Заголовок</title>
+		<title>Контакты</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,27 +39,63 @@
 
 			  <!-- меню -->
 			  <ul id="topmenu">
-				<li><a href="">Проекты</a></li>
+				<li><a href="project.html">Проекты</a></li>
 				<li class="sub">
 					<img class="topmenu-arrow" src="img/arrow_back.svg">
-					<a href="">О компании</a>
+					<a href="about.html">О компании</a>
 					<ul class="submenu">
-						<li><a href="">О компании</a></li>
-						<li><a href="">Бэкстэйдж</a></li>
-						<li><a href="">Отзывы</a></li>
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="backstage.html">Бэкстэйдж</a></li>
+						<li><a href="rewiews.html">Отзывы</a></li>
 					</ul>
 				</li>
-				<li><a href="">Стоимость</a>
+				<li><a href="price.html">Стоимость</a>
 				</li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="contact.html">Контакты</a></li>
 			  </ul>
 			</nav>
 		</header>
 
 		<!-- MAIN -->
 		<main>
-	
+			<div class="container-main">
+				<h1>Контакты</h1>
+
+				<div class="map-contacts-info clearfix">
+					<!-- image-->
+					<div class="map-contacts-image"></div>
+					<!-- address-->	
+					<div class="map-contact-info-container">
+						<div class="map-contacts-container-address">
+							<div class="map-contact-info-container-block-1">
+
+								<img src="img/contact/pin-address.svg" alt="#" width="25px" height="30px">
+								<p>
+									<b>Адрес:</b> Россия, г. Санкт-Петербург<br/> Каменноостровский проспект 29
+								</p>
+
+							</div>
+						</div>
+						<div class="map-contact-info-container-block-2">
+							
+							<img src="img/contact/call-answer.svg" alt="#" width="20px" height="20px">
+							<a class="map-contacts-tel" href="callto:+79111114011">+7 (911) 111-40-11</a>
+
+							<img src="img/contact/e-mail.svg" alt="#" width="24px" height="16px">
+							<a class="map-contacts-email" href="mailto:info@indoorgroup.ru">la@lafilms.ru</a>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+				
 		</main>
+
+		<!-- map -->
+			<div class="map-contacts-container">
+				<div id="map-contacts"></div>
+			</div>
 
 		<!-- FOOTER -->
 		<footer>
@@ -88,5 +124,6 @@
 		</footer>
 
 		<script src="js/js-main.js"></script>
+		<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoWBY-Gh17JaPwIBcEmv_lZOucvuAf2R0&callback=initMap"></script>
 	</body>
 </html>
